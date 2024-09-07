@@ -42,10 +42,6 @@ jobs:
           which iverilog
           iverilog -V
 
-      - name: Install dependencies
-        run: |
-          sudo apt-get install -y iverilog
-
       - name: Run sim tests
         timeout-minutes: 10
         run: |
